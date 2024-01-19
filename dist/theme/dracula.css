@@ -410,12 +410,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin-bottom: 1em;
   font-size: 0.6em;
 }
-#work {
-  width: 11em;
-}
-.sombra img {
-  box-shadow: 10px 10px 30px 30px hsla(235,  14%, 15%,   1);
-}
 #technical_sheet {
   display: flex;
   flex-direction: column;
