@@ -380,9 +380,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal em, .reveal i, .reveal blockquote {
   color: var(--r-italic-color);
 }
-.reveal code {
+/* .reveal code {
   color: var(--r-inline-code-color);
-}
+}*/
 .reveal ul li::marker, .reveal ol li::marker {
   color: var(--r-list-bullet-color);
 }
@@ -393,12 +393,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-align: left !important;
 }
 #container h5 {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  font-weight: 700;
   font-size: 0.55em;
   margin-bottom: 0;
   /* color: #6272a4	;*/
+
+}
+.versalitas {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 #container p {

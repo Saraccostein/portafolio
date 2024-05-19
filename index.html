@@ -27,7 +27,7 @@
 				</section>
 				<section data-auto-animate>
 					<h1>Portafolio</h1>
-					<p style="font-family: 'Space Mono';"><u>2024</u></p>
+					<p style="font-family: '0xProto'; font-style: italic;">Maro Saracco · <span style="font-family: 'Space Mono'; font-style: normal; font-weight: 600;">2024</span></p>
 				</section>
 				<section data-auto-animate>
 					<h1 style="margin-bottom: 0;">Portafolio</h1>
@@ -44,7 +44,6 @@
 						<div>
 							<h3 style="text-align: left;">Esta soy yo</h3>
 							<p style="text-align: left; font-size: 27px; line-height: 39px;">«Amo aprender, lo que me llevó a dominar programas de diseño y diversas disciplinas. Ahora, me especializo en diseño con programación, destacando en JavaScript y Prompt Engineering».</p>
-
 						</div>
 					</div>
 				</section>
@@ -55,7 +54,7 @@
 
 				<section data-auto-animate>
 					<h2>Cómic <b>Inteligencipolis</b></h2>
-					<p style="font-size: 27px;">(Comic hecho enteramente con inteligencia artificial)</p>
+					<p style="font-size: 27px;">(Comic hecho enteramente con inteligencia artificial.)</p>
 				</section>
 
 				<section>
@@ -67,27 +66,57 @@
 					</div>
 				</section>
 
-				<section data-transition="fade-out">
-					<h2>Menú<br><b>Los molinos</b></h2>
+				<section data-auto-animate>
+					<h2>Videojuego Mokepon</h2>
 				</section>
 
-					<section data-background-gradient="radial-gradient(#282a36	, #626255)" data-transition="fade">
-							<img src="assets/menú-los_molinos-01.png" style="width: 27rem; box-shadow: 10px 10px 30px 30px hsla(235,  14%, 15%,   0.4);">
-					</section>
-
-					<section data-background-gradient="radial-gradient(#282a36	, #32546b)" data-transition="fade-in">
-						<img src="assets/menú-los_molinos-02.png" style="width: 27rem; box-shadow: 10px 10px 30px 30px hsla(235,  14%, 15%,   0.4);">
-				</section>
-
-				<section>
-					<h2>Videojuego<br><b>Mokepon</b></h2>
+				<section data-auto-animate>
+					<h2><b>Videojuego</b> Mokepon</h2>
+					<p>Programado con JavaScript Vanilla.</p>
 				</section>
 
 				<section data-background-iframe="https://saraccostein.github.io/mokepon/" data-background-interactive>
 				</section>
 
 				<section>
-					<h2 style="font-weight: 600;">Fin :)</h2>
+					<pre><code data-line-numbers>
+function attackSequence() {
+
+	attackButtons.forEach((button) => {
+		button.addEventListener('click', (event) => {
+			let target = event.target.id;
+			playerSequence.push(playerAttacks.find(keyValue => keyValue['id'] === target)['type'])
+			button.disabled = true;
+			button.classList.add('disable');
+			attackLogging(target);
+			battleInit();
+		})
+	});
+	}
+					</code></pre>
+					<a href=""></a>
+				</section>
+
+				<section>
+					<div fragment custom blur style="display: flex; align-items: center; justify-content: center;">
+						<lottie-player src="./assets/github-purple.json" background="transparent"  speed="0.5"  style="width: 200px;" loop autoplay></lottie-player>
+					</div>
+
+					<h4 style="font-weight: 600; margin-bottom: 5px;">Github</h4>
+					<a href="https://github.com/Saraccostein"><u>@Saraccostein</u></a>
+				</section>
+
+				<section>
+					<div style="display: flex; align-items: center; justify-content: center;">
+						<lottie-player src="./assets/insta.json" background="transparent"  speed="0.5"  style="width: 200px;" loop autoplay></lottie-player>
+					</div>
+
+					<h4 style="font-weight: 600; margin-bottom: 5px;">Instagram</h4>
+					<a href="https://www.instagram.com/amoruntea/"><u>@amoruntea</u></a>
+				</section>
+
+				<section>
+					<h2 style="font-weight: 600;">Fin</h2>
 				</section>
 
 			</div>
@@ -97,6 +126,8 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
