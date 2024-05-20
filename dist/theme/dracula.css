@@ -230,6 +230,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal code {
   font-family: var(--r-code-font);
+  color: #F8F8F2;
   text-transform: none;
   tab-size: 2;
 }
